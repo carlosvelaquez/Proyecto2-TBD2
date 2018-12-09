@@ -208,6 +208,7 @@ Makefile: Proyecto2.pro C:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++/qmake.conf C:/
 		C:/Qt/5.11.2/mingw53_32/mkspecs/features/resolve_config.prf \
 		C:/Qt/5.11.2/mingw53_32/mkspecs/features/exclusive_builds_post.prf \
 		C:/Qt/5.11.2/mingw53_32/mkspecs/features/default_post.prf \
+		C:/Qt/5.11.2/mingw53_32/mkspecs/features/win32/console.prf \
 		C:/Qt/5.11.2/mingw53_32/mkspecs/features/precompile_header.prf \
 		C:/Qt/5.11.2/mingw53_32/mkspecs/features/warn_on.prf \
 		C:/Qt/5.11.2/mingw53_32/mkspecs/features/qt.prf \
@@ -217,15 +218,14 @@ Makefile: Proyecto2.pro C:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++/qmake.conf C:/
 		C:/Qt/5.11.2/mingw53_32/mkspecs/features/uic.prf \
 		C:/Qt/5.11.2/mingw53_32/mkspecs/features/qmake_use.prf \
 		C:/Qt/5.11.2/mingw53_32/mkspecs/features/file_copies.prf \
-		C:/Qt/5.11.2/mingw53_32/mkspecs/features/win32/windows.prf \
 		C:/Qt/5.11.2/mingw53_32/mkspecs/features/testcase_targets.prf \
 		C:/Qt/5.11.2/mingw53_32/mkspecs/features/exceptions.prf \
 		C:/Qt/5.11.2/mingw53_32/mkspecs/features/yacc.prf \
 		C:/Qt/5.11.2/mingw53_32/mkspecs/features/lex.prf \
 		Proyecto2.pro \
-		C:/Qt/5.11.2/mingw53_32/lib/qtmain.prl \
 		C:/Qt/5.11.2/mingw53_32/lib/Qt5Widgets.prl \
 		C:/Qt/5.11.2/mingw53_32/lib/Qt5Gui.prl \
+		C:/Qt/5.11.2/mingw53_32/lib/Qt5Sql.prl \
 		C:/Qt/5.11.2/mingw53_32/lib/Qt5Core.prl
 	$(QMAKE) -o Makefile Proyecto2.pro
 C:/Qt/5.11.2/mingw53_32/mkspecs/features/spec_pre.prf:
@@ -375,6 +375,7 @@ C:/Qt/5.11.2/mingw53_32/mkspecs/features/win32/default_pre.prf:
 C:/Qt/5.11.2/mingw53_32/mkspecs/features/resolve_config.prf:
 C:/Qt/5.11.2/mingw53_32/mkspecs/features/exclusive_builds_post.prf:
 C:/Qt/5.11.2/mingw53_32/mkspecs/features/default_post.prf:
+C:/Qt/5.11.2/mingw53_32/mkspecs/features/win32/console.prf:
 C:/Qt/5.11.2/mingw53_32/mkspecs/features/precompile_header.prf:
 C:/Qt/5.11.2/mingw53_32/mkspecs/features/warn_on.prf:
 C:/Qt/5.11.2/mingw53_32/mkspecs/features/qt.prf:
@@ -384,15 +385,14 @@ C:/Qt/5.11.2/mingw53_32/mkspecs/features/win32/opengl.prf:
 C:/Qt/5.11.2/mingw53_32/mkspecs/features/uic.prf:
 C:/Qt/5.11.2/mingw53_32/mkspecs/features/qmake_use.prf:
 C:/Qt/5.11.2/mingw53_32/mkspecs/features/file_copies.prf:
-C:/Qt/5.11.2/mingw53_32/mkspecs/features/win32/windows.prf:
 C:/Qt/5.11.2/mingw53_32/mkspecs/features/testcase_targets.prf:
 C:/Qt/5.11.2/mingw53_32/mkspecs/features/exceptions.prf:
 C:/Qt/5.11.2/mingw53_32/mkspecs/features/yacc.prf:
 C:/Qt/5.11.2/mingw53_32/mkspecs/features/lex.prf:
 Proyecto2.pro:
-C:/Qt/5.11.2/mingw53_32/lib/qtmain.prl:
 C:/Qt/5.11.2/mingw53_32/lib/Qt5Widgets.prl:
 C:/Qt/5.11.2/mingw53_32/lib/Qt5Gui.prl:
+C:/Qt/5.11.2/mingw53_32/lib/Qt5Sql.prl:
 C:/Qt/5.11.2/mingw53_32/lib/Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -o Makefile Proyecto2.pro
