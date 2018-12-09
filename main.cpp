@@ -8,11 +8,6 @@
 
 int main(int argc, char *argv[]) {
   QApplication app(argc, argv);
-  MainWindow w;
-  w.show();
-
-  ReplicarWindow rw;
-  rw.show();
 
   //Base de datos origen
   QSqlDatabase dbOrigen = QSqlDatabase::addDatabase("QODBC", "dbOrigen");
@@ -35,6 +30,20 @@ int main(int argc, char *argv[]) {
     qDebug() << "Conectado a la db destino exitosamente.";
   }else{
     qDebug() << "Error al conectarse a la db destino: " << dbDestino.lastError();
+  }
+
+
+
+
+// ==============================================
+  MainWindow w;
+
+  w.setDbOrigen(&dbOrigen);
+  w.setDbDestino(&dbDestino);
+  w.show();
+
+  if(dbOrigen.isOpen() && dbDestino.isOpen()){
+    qDebug()<<"Ambas están conectadas";
   }
 
   return app.exec();
