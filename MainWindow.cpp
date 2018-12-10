@@ -41,14 +41,19 @@ void MainWindow::conectarBdOrigen(){
   QString port = ui.lineEditPortOrigen->text();
   QString instanceName = ui.lineEditInstanceNameOrigen->text();
   QString password = ui.lineEditPasswordOrigen->text();
-  if(userName != "" && dataBaseName != "" && port != "" && instanceName != "" && password != ""){
+
+
+  /*if(userName != "" && dataBaseName != "" && port != "" && instanceName != "" && password != ""){
     //Mostrar una notificacion que no se conecto
   }else{
     if(dbOrigen->isOpen() && dbDestino->isOpen()){
       ReplicarWindow* rw = new ReplicarWindow();
       rw->show();
     }
-  }
+  }*/
+
+  ReplicarWindow* rw = new ReplicarWindow();
+  rw->show();
 }
 
 void MainWindow::conectarBdDestino(){
@@ -59,12 +64,16 @@ void MainWindow::conectarBdDestino(){
   QString port = ui.lineEditPortDestino->text();
   QString instanceName = ui.lineEditInstanceNameDestino->text();
   QString password = ui.lineEditPasswordDestino->text();
-  if(userName != "" && dataBaseName != "" && port != "" && instanceName != "" && password != ""){
+
+  /*if(userName != "" && dataBaseName != "" && port != "" && instanceName != "" && password != ""){
     //Mostrar una notificacion que no se conecto
   }else{
     if(dbOrigen->isOpen() && dbDestino->isOpen()){
       ReplicarWindow* rw = new ReplicarWindow();
       rw->show();
     }
-  }
+  }*/
+
+  ReplicarWindow* rw = new ReplicarWindow();
+  rw->show();
 }
