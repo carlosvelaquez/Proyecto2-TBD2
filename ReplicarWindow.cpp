@@ -15,7 +15,7 @@ void ReplicarWindow::setDbOrigen(QSqlDatabase* dbOrigen_p){
   dbOrigen = dbOrigen_p;
   QStringList tables = dbOrigen->tables();
   for(int i=0 ; i<tables.size(); i++){
-    if(i<tables.size()-2) ui.listWidgetDisponibles->addItem(tables.at(i));
+    if(i<tables.size()) ui.listWidgetDisponibles->addItem(tables.at(i));
   }
 }
 
@@ -42,8 +42,16 @@ void ReplicarWindow::addTable(){
 
 void ReplicarWindow::removeTable(){
   QListWidgetItem* item = ui.listWidgetReplicar->currentItem();
-  qDebug() <<item->text();
-  ui.listWidgetReplicar->removeItemWidget(item);
+  QList<QListWidgetItem*> items ;
+  for(int i=0; i<ui.listWidgetReplicar->count(); i++){
+    items.push_back(ui.listWidgetReplicar->takeItem(i));
+  }
+  reset();
+  for(int i=0; i<items.size(); i++){
+    if(items.at(i)->text() != item->text()){
+      ui.listWidgetReplicar->addItem(items.at(i)->text());
+    }
+  }
 }
 
 void ReplicarWindow::reset(){
