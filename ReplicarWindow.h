@@ -9,6 +9,7 @@
 #include <QListWidgetItem>
 #include <QList>
 #include <QDebug>
+#include <QMessageBox>
 
 class ReplicarWindow : public QWidget{
   Q_OBJECT
@@ -22,6 +23,8 @@ private:
 private slots:
     void addTable();
     void removeTable();
+    void replicate();
+    void reset();
 
 public:
 

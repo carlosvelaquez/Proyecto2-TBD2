@@ -7,14 +7,15 @@
 #include <QDebug>
 #include "ReplicarWindow.h"
 #include <QString>
+#include <QMessageBox>
 
 class MainWindow : public QMainWindow{
   Q_OBJECT
 private:
   Ui::MainWindow ui;
 
-  QSqlDatabase* dbOrigen ;
-  QSqlDatabase* dbDestino;
+  QSqlDatabase dbOrigen  = QSqlDatabase::addDatabase("QODBC", "dbOrigen");
+  QSqlDatabase dbDestino = QSqlDatabase::addDatabase("QMYSQL", "dbDestino");
 
 private slots:
   void conectarBdOrigen();
@@ -22,8 +23,8 @@ private slots:
 
 public:
   void clearWidgets();
-  void setDbOrigen(QSqlDatabase*);
-  void setDbDestino(QSqlDatabase*);
+  void fillWidgets();
+  
   explicit MainWindow(QWidget* parent = 0);
 };
 

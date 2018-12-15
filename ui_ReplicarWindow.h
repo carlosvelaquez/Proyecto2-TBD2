@@ -43,9 +43,9 @@ public:
     QListWidget *listWidgetReplicar;
     QFrame *frame_5;
     QHBoxLayout *horizontalLayout_2;
-    QPushButton *pushButton_4;
+    QPushButton *pushButtonReset;
     QSpacerItem *horizontalSpacer;
-    QPushButton *pushButton_3;
+    QPushButton *pushButtonReplicate;
 
     void setupUi(QWidget *ReplicarWindow)
     {
@@ -167,19 +167,19 @@ public:
         frame_5->setFrameShadow(QFrame::Raised);
         horizontalLayout_2 = new QHBoxLayout(frame_5);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        pushButton_4 = new QPushButton(frame_5);
-        pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
+        pushButtonReset = new QPushButton(frame_5);
+        pushButtonReset->setObjectName(QStringLiteral("pushButtonReset"));
 
-        horizontalLayout_2->addWidget(pushButton_4);
+        horizontalLayout_2->addWidget(pushButtonReset);
 
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
 
         horizontalLayout_2->addItem(horizontalSpacer);
 
-        pushButton_3 = new QPushButton(frame_5);
-        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
+        pushButtonReplicate = new QPushButton(frame_5);
+        pushButtonReplicate->setObjectName(QStringLiteral("pushButtonReplicate"));
 
-        horizontalLayout_2->addWidget(pushButton_3);
+        horizontalLayout_2->addWidget(pushButtonReplicate);
 
 
         verticalLayout_3->addWidget(frame_5);
@@ -198,8 +198,8 @@ public:
         pushButtonAdd->setText(QApplication::translate("ReplicarWindow", ">", nullptr));
         pushButtonRemove->setText(QApplication::translate("ReplicarWindow", "<", nullptr));
         label_3->setText(QApplication::translate("ReplicarWindow", "Tablas a Replicar", nullptr));
-        pushButton_4->setText(QApplication::translate("ReplicarWindow", "Resetear Cambios", nullptr));
-        pushButton_3->setText(QApplication::translate("ReplicarWindow", "Comenzar Replica", nullptr));
+        pushButtonReset->setText(QApplication::translate("ReplicarWindow", "Resetear Cambios", nullptr));
+        pushButtonReplicate->setText(QApplication::translate("ReplicarWindow", "Comenzar Replica", nullptr));
     } // retranslateUi
 
 };

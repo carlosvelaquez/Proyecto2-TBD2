@@ -273,6 +273,9 @@ debug/moc_MainWindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindow 
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidgetItem \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/QList \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
 		MainWindow.h \
 		debug/moc_predefs.h \
@@ -431,6 +434,9 @@ debug/moc_ReplicarWindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget 
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidgetItem \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/QList \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
 		ReplicarWindow.h \
 		debug/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
@@ -753,6 +759,9 @@ debug/main.o: main.cpp C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidgetItem \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/QList \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o main.cpp
 
@@ -921,6 +930,9 @@ debug/MainWindow.o: MainWindow.cpp MainWindow.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidgetItem \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/QList \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\MainWindow.o MainWindow.cpp
 
@@ -1076,7 +1088,10 @@ debug/ReplicarWindow.o: ReplicarWindow.cpp ReplicarWindow.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidgetItem \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/QList \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\ReplicarWindow.o ReplicarWindow.cpp
 
 debug/moc_MainWindow.o: debug/moc_MainWindow.cpp 

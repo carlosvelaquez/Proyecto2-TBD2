@@ -6,6 +6,21 @@ MainWindow::MainWindow(QWidget* parent) :
 
   connect(ui.pushButtonConnectDBO, SIGNAL(clicked()), this, SLOT(conectarBdOrigen()));
   connect(ui.pushButtonConnectDBD, SIGNAL(clicked()), this, SLOT(conectarBdDestino()));
+  fillWidgets();
+}
+
+void MainWindow::fillWidgets(){
+  ui.lineEditUserName_Origen->insert("SA");
+  ui.lineEditDatabaseNameOrigen->insert("TEST");
+  ui.lineEditPortOrigen->insert("1433");
+  ui.lineEditInstanceNameOrigen->insert("");
+  ui.lineEditPasswordOrigen->insert("Papitopiernaslargas69");
+
+  ui.lineEditUserName_Destino->insert("admin");
+  ui.lineEditDatabaseNameDestino->insert("TEST");
+  ui.lineEditPortDestino->insert("");
+  ui.lineEditInstanceNameDestino->insert("");
+  ui.lineEditPasswordDestino->insert("papitopiernaslargas69");
 }
 
 void MainWindow::clearWidgets(){
@@ -22,44 +37,44 @@ void MainWindow::clearWidgets(){
   ui.lineEditPasswordDestino->insert("");
 }
 
-void MainWindow::setDbOrigen(QSqlDatabase* dbOrigen_p){
-  dbOrigen = dbOrigen_p;
-}
-
-void MainWindow::setDbDestino(QSqlDatabase* dbDestino_p){
-  dbDestino = dbDestino_p;
-}
 
 // En el momento en que las dos bases de datos estén conectadas, la pantalla de
 // ReplicarWindow estará habilitada.
 
 void MainWindow::conectarBdOrigen(){
-  clearWidgets();
 
   QString userName = ui.lineEditUserName_Origen->text();
   QString dataBaseName = ui.lineEditDatabaseNameOrigen->text();
   QString port = ui.lineEditPortOrigen->text();
-  QString instanceName = ui.lineEditInstanceNameOrigen->text();
+  QString instanceName = ui.lineEditInstanceNameOrigen->text(); //Este no se usa
   QString password = ui.lineEditPasswordOrigen->text();
+  QString m = "DRIVER={SQL Server};Server=68.183.248.73;Database="+dataBaseName+";Uid="+userName+";Port="+port+";Pwd="+password+";WSID=.";
 
+  dbOrigen.setDatabaseName(m);
 
-  /*if(userName != "" && dataBaseName != "" && port != "" && instanceName != "" && password != ""){
-    //Mostrar una notificacion que no se conecto
+  //dbOrigen.setDatabaseName("DRIVER={SQL Server};Server=68.183.248.73;Database=TEST;Uid=SA;Port=1433;Pwd=Papitopiernaslargas69;WSID=.");
+
+  if (dbOrigen.open()) {
+    QMessageBox Msgbox;
+    Msgbox.setText("Se ha conectado exitosamente");
+    Msgbox.exec();
   }else{
-    if(dbOrigen->isOpen() && dbDestino->isOpen()){
-      ReplicarWindow* rw = new ReplicarWindow();
-      rw->show();
-    }
-  }*/
+    QMessageBox Msgbox;
+    Msgbox.setText("Error al conectar, verifique las credenciales");
+    Msgbox.exec();
+  }
 
-  ReplicarWindow* rw = new ReplicarWindow();
-  rw->setDbOrigen(dbOrigen);
-  rw->setDbDestino(dbDestino);
-  rw->show();
+
+  if(dbOrigen.isOpen() && dbDestino.isOpen()){
+    ReplicarWindow* rw = new ReplicarWindow();
+    rw->setDbOrigen(&dbOrigen);
+    rw->setDbDestino(&dbDestino);
+    rw->show();
+  }
+
 }
 
 void MainWindow::conectarBdDestino(){
-  clearWidgets();
 
   QString userName = ui.lineEditUserName_Destino->text();
   QString dataBaseName = ui.lineEditDatabaseNameDestino->text();
@@ -67,17 +82,27 @@ void MainWindow::conectarBdDestino(){
   QString instanceName = ui.lineEditInstanceNameDestino->text();
   QString password = ui.lineEditPasswordDestino->text();
 
-  /*if(userName != "" && dataBaseName != "" && port != "" && instanceName != "" && password != ""){
-    //Mostrar una notificacion que no se conecto
-  }else{
-    if(dbOrigen->isOpen() && dbDestino->isOpen()){
-      ReplicarWindow* rw = new ReplicarWindow();
-      rw->show();
-    }
-  }*/
 
-  ReplicarWindow* rw = new ReplicarWindow();
-  rw->setDbOrigen(dbOrigen);
-  rw->setDbDestino(dbDestino);
-  rw->show();
+  //Base de datos destino
+  dbDestino.setHostName("68.183.248.73");
+  dbDestino.setDatabaseName(dataBaseName);
+  dbDestino.setUserName(userName);
+  dbDestino.setPassword(password);
+
+  if (dbDestino.open()) {
+    QMessageBox Msgbox;
+    Msgbox.setText("Se ha conectado exitosamente");
+    Msgbox.exec();
+  }else{
+    QMessageBox Msgbox;
+    Msgbox.setText("Error al conectar, verifique las credenciales");
+    Msgbox.exec();
+  }
+
+  if(dbOrigen.isOpen() && dbDestino.isOpen()){
+    ReplicarWindow* rw = new ReplicarWindow();
+    rw->setDbOrigen(&dbOrigen);
+    rw->setDbDestino(&dbDestino);
+    rw->show();
+  }
 }

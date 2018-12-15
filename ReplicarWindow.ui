@@ -171,7 +171,7 @@ QPushButton{
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QPushButton" name="pushButton_4">
+       <widget class="QPushButton" name="pushButtonReset">
         <property name="text">
          <string>Resetear Cambios</string>
         </property>
@@ -194,7 +194,7 @@ QPushButton{
        </spacer>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="pushButtonReplicate">
         <property name="text">
          <string>Comenzar Replica</string>
         </property>
