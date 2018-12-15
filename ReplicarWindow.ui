@@ -80,7 +80,7 @@ QPushButton{
           </widget>
          </item>
          <item>
-          <widget class="QListWidget" name="listWidget"/>
+          <widget class="QListWidget" name="listWidgetDisponibles"/>
          </item>
         </layout>
        </widget>
@@ -95,7 +95,7 @@ QPushButton{
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_4">
          <item>
-          <widget class="QPushButton" name="pushButton_2">
+          <widget class="QPushButton" name="pushButtonAdd">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
              <horstretch>0</horstretch>
@@ -108,7 +108,7 @@ QPushButton{
           </widget>
          </item>
          <item>
-          <widget class="QPushButton" name="pushButton">
+          <widget class="QPushButton" name="pushButtonRemove">
            <property name="text">
             <string>&lt;</string>
            </property>
@@ -143,7 +143,7 @@ QPushButton{
           </widget>
          </item>
          <item>
-          <widget class="QListWidget" name="listWidget_2"/>
+          <widget class="QListWidget" name="listWidgetReplicar"/>
          </item>
         </layout>
        </widget>

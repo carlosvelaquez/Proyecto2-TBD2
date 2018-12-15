@@ -32,15 +32,15 @@ public:
     QFrame *frame_2;
     QVBoxLayout *verticalLayout;
     QLabel *label_2;
-    QListWidget *listWidget;
+    QListWidget *listWidgetDisponibles;
     QFrame *frame_4;
     QVBoxLayout *verticalLayout_4;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton;
+    QPushButton *pushButtonAdd;
+    QPushButton *pushButtonRemove;
     QFrame *frame_3;
     QVBoxLayout *verticalLayout_2;
     QLabel *label_3;
-    QListWidget *listWidget_2;
+    QListWidget *listWidgetReplicar;
     QFrame *frame_5;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *pushButton_4;
@@ -97,10 +97,10 @@ public:
 
         verticalLayout->addWidget(label_2);
 
-        listWidget = new QListWidget(frame_2);
-        listWidget->setObjectName(QStringLiteral("listWidget"));
+        listWidgetDisponibles = new QListWidget(frame_2);
+        listWidgetDisponibles->setObjectName(QStringLiteral("listWidgetDisponibles"));
 
-        verticalLayout->addWidget(listWidget);
+        verticalLayout->addWidget(listWidgetDisponibles);
 
 
         horizontalLayout->addWidget(frame_2);
@@ -111,20 +111,20 @@ public:
         frame_4->setFrameShadow(QFrame::Raised);
         verticalLayout_4 = new QVBoxLayout(frame_4);
         verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
-        pushButton_2 = new QPushButton(frame_4);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
+        pushButtonAdd = new QPushButton(frame_4);
+        pushButtonAdd->setObjectName(QStringLiteral("pushButtonAdd"));
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(pushButton_2->sizePolicy().hasHeightForWidth());
-        pushButton_2->setSizePolicy(sizePolicy);
+        sizePolicy.setHeightForWidth(pushButtonAdd->sizePolicy().hasHeightForWidth());
+        pushButtonAdd->setSizePolicy(sizePolicy);
 
-        verticalLayout_4->addWidget(pushButton_2);
+        verticalLayout_4->addWidget(pushButtonAdd);
 
-        pushButton = new QPushButton(frame_4);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButtonRemove = new QPushButton(frame_4);
+        pushButtonRemove->setObjectName(QStringLiteral("pushButtonRemove"));
 
-        verticalLayout_4->addWidget(pushButton);
+        verticalLayout_4->addWidget(pushButtonRemove);
 
 
         horizontalLayout->addWidget(frame_4);
@@ -142,10 +142,10 @@ public:
 
         verticalLayout_2->addWidget(label_3);
 
-        listWidget_2 = new QListWidget(frame_3);
-        listWidget_2->setObjectName(QStringLiteral("listWidget_2"));
+        listWidgetReplicar = new QListWidget(frame_3);
+        listWidgetReplicar->setObjectName(QStringLiteral("listWidgetReplicar"));
 
-        verticalLayout_2->addWidget(listWidget_2);
+        verticalLayout_2->addWidget(listWidgetReplicar);
 
 
         horizontalLayout->addWidget(frame_3);
@@ -195,8 +195,8 @@ public:
         ReplicarWindow->setWindowTitle(QApplication::translate("ReplicarWindow", "Replicar Tablas", nullptr));
         label->setText(QApplication::translate("ReplicarWindow", "Seleccionar Tablas a Replicar", nullptr));
         label_2->setText(QApplication::translate("ReplicarWindow", "Tablas Disponibles", nullptr));
-        pushButton_2->setText(QApplication::translate("ReplicarWindow", ">", nullptr));
-        pushButton->setText(QApplication::translate("ReplicarWindow", "<", nullptr));
+        pushButtonAdd->setText(QApplication::translate("ReplicarWindow", ">", nullptr));
+        pushButtonRemove->setText(QApplication::translate("ReplicarWindow", "<", nullptr));
         label_3->setText(QApplication::translate("ReplicarWindow", "Tablas a Replicar", nullptr));
         pushButton_4->setText(QApplication::translate("ReplicarWindow", "Resetear Cambios", nullptr));
         pushButton_3->setText(QApplication::translate("ReplicarWindow", "Comenzar Replica", nullptr));

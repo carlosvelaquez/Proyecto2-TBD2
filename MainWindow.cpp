@@ -53,6 +53,8 @@ void MainWindow::conectarBdOrigen(){
   }*/
 
   ReplicarWindow* rw = new ReplicarWindow();
+  rw->setDbOrigen(dbOrigen);
+  rw->setDbDestino(dbDestino);
   rw->show();
 }
 
@@ -75,5 +77,7 @@ void MainWindow::conectarBdDestino(){
   }*/
 
   ReplicarWindow* rw = new ReplicarWindow();
+  rw->setDbOrigen(dbOrigen);
+  rw->setDbDestino(dbDestino);
   rw->show();
 }

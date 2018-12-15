@@ -2,6 +2,7 @@
 #include <QDebug>
 #include <QtSql>
 #include <QSqlDatabase>
+#include <QStringList>
 
 #include "MainWindow.h"
 #include "ReplicarWindow.h"
@@ -31,7 +32,6 @@ int main(int argc, char *argv[]) {
   }else{
     qDebug() << "Error al conectarse a la db destino: " << dbDestino.lastError();
   }
-
 
 
 
