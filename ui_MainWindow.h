@@ -63,14 +63,15 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
         MainWindow->resize(542, 344);
-        MainWindow->setStyleSheet(QLatin1String("background-color: white;\n"
-""));
+        MainWindow->setStyleSheet(QStringLiteral("background-color:#3F51B5;"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         horizontalLayout = new QHBoxLayout(centralwidget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         frameOrigen = new QFrame(centralwidget);
         frameOrigen->setObjectName(QStringLiteral("frameOrigen"));
+        frameOrigen->setStyleSheet(QLatin1String("background-color:white;\n"
+""));
         frameOrigen->setFrameShape(QFrame::StyledPanel);
         frameOrigen->setFrameShadow(QFrame::Raised);
         verticalLayout = new QVBoxLayout(frameOrigen);
@@ -137,6 +138,7 @@ public:
 
         pushButtonConnectDBO = new QPushButton(frameOrigen);
         pushButtonConnectDBO->setObjectName(QStringLiteral("pushButtonConnectDBO"));
+        pushButtonConnectDBO->setStyleSheet(QStringLiteral(""));
 
         verticalLayout->addWidget(pushButtonConnectDBO);
 
@@ -145,6 +147,7 @@ public:
 
         frameDestino = new QFrame(centralwidget);
         frameDestino->setObjectName(QStringLiteral("frameDestino"));
+        frameDestino->setStyleSheet(QStringLiteral("background-color: white;"));
         frameDestino->setFrameShape(QFrame::StyledPanel);
         frameDestino->setFrameShadow(QFrame::Raised);
         verticalLayout_3 = new QVBoxLayout(frameDestino);
