@@ -51,7 +51,7 @@ public:
     {
         if (ReplicarWindow->objectName().isEmpty())
             ReplicarWindow->setObjectName(QStringLiteral("ReplicarWindow"));
-        ReplicarWindow->resize(533, 328);
+        ReplicarWindow->resize(533, 313);
         ReplicarWindow->setStyleSheet(QStringLiteral("background-color:#3F51B5;"));
         verticalLayout_3 = new QVBoxLayout(ReplicarWindow);
         verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));

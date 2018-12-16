@@ -10,6 +10,11 @@
 #include <QList>
 #include <QDebug>
 #include <QMessageBox>
+#include <QSqlQuery>
+#include <QSqlRecord>
+#include <vector>
+
+using namespace std;
 
 class ReplicarWindow : public QWidget{
   Q_OBJECT
@@ -17,6 +22,7 @@ class ReplicarWindow : public QWidget{
 private:
   Ui::ReplicarWindow ui;
 
+  vector<QString> tables;
   QSqlDatabase* dbOrigen ;
   QSqlDatabase* dbDestino;
 
