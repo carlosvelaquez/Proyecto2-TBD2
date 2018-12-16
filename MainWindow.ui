@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>542</width>
-    <height>344</height>
+    <width>414</width>
+    <height>377</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,91 +17,31 @@
    <string notr="true">background-color:#3F51B5;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QHBoxLayout" name="horizontalLayout">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <widget class="QFrame" name="frameOrigen">
-      <property name="styleSheet">
-       <string notr="true">background-color:white;
-</string>
-      </property>
+     <widget class="QFrame" name="frame_2">
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
       </property>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QLabel" name="label">
+        <widget class="QLabel" name="label_8">
          <property name="font">
           <font>
-           <pointsize>16</pointsize>
+           <family>Montserrat SemiBold</family>
+           <pointsize>24</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
          </property>
-         <property name="text">
-          <string>Origen</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_7">
-         <property name="text">
-          <string>Nombre de usuario:</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditUserName_Origen"/>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_6">
-         <property name="text">
-          <string>Contraseña:</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditPasswordOrigen"/>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_5">
-         <property name="text">
-          <string>Puerto:</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditPortOrigen"/>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_3">
-         <property name="text">
-          <string>Nombre de instancia:</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditInstanceNameOrigen"/>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_4">
-         <property name="text">
-          <string>Nombre de la base de datos:</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditDatabaseNameOrigen"/>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButtonConnectDBO">
          <property name="styleSheet">
-          <string notr="true"/>
+          <string notr="true">color:white;</string>
          </property>
          <property name="text">
-          <string>Conectar a la base de datos origen</string>
+          <string>Administrar Conexiones</string>
          </property>
         </widget>
        </item>
@@ -109,9 +49,9 @@
      </widget>
     </item>
     <item>
-     <widget class="QFrame" name="frameDestino">
+     <widget class="QFrame" name="frame">
       <property name="styleSheet">
-       <string notr="true">background-color: white;</string>
+       <string notr="true"/>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -119,76 +59,267 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <layout class="QVBoxLayout" name="verticalLayout_3">
+      <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QLabel" name="label_2">
-         <property name="font">
-          <font>
-           <pointsize>16</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
+        <widget class="QFrame" name="frameDestino">
+         <property name="styleSheet">
+          <string notr="true">background-color: white;</string>
          </property>
-         <property name="text">
-          <string>Destino</string>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
          </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="font">
+             <font>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>BD Destino</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_18">
+            <property name="text">
+             <string>Nombre de usuario:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditUserName_Destino"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_15">
+            <property name="text">
+             <string>Contraseña:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditPasswordDestino"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_16">
+            <property name="text">
+             <string>Puerto:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditPortDestino"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_17">
+            <property name="text">
+             <string>Nombre de instancia:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditInstanceNameDestino"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="text">
+             <string>Nombre de la base de datos:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditDatabaseNameDestino"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonConnectDBD">
+            <property name="styleSheet">
+             <string notr="true">	color: white;
+	background-color: #3F51B5;</string>
+            </property>
+            <property name="text">
+             <string>Probar Conexión</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="label_18">
-         <property name="text">
-          <string>Nombre de usuario:</string>
+        <widget class="QFrame" name="frameOrigen">
+         <property name="styleSheet">
+          <string notr="true">background-color:white;
+</string>
          </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <pointsize>16</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>BD Origen</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Nombre de usuario:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditUserName_Origen"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Contraseña:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditPasswordOrigen"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Puerto:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditPortOrigen"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Nombre de instancia:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditInstanceNameOrigen"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Nombre de la base de datos:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEditDatabaseNameOrigen"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonConnectDBO">
+            <property name="styleSheet">
+             <string notr="true">	color: white;
+	background-color: #3F51B5;</string>
+            </property>
+            <property name="text">
+             <string>Probar Conexión</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_3">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
-        <widget class="QLineEdit" name="lineEditUserName_Destino"/>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_15">
-         <property name="text">
-          <string>Contraseña:</string>
+        <widget class="QFrame" name="frame_5">
+         <property name="styleSheet">
+          <string notr="true">background-color: white;
+border-radius: 5px;</string>
          </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditPasswordDestino"/>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_16">
-         <property name="text">
-          <string>Puerto:</string>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
          </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditPortDestino"/>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_17">
-         <property name="text">
-          <string>Nombre de instancia:</string>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
          </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditInstanceNameDestino"/>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_14">
-         <property name="text">
-          <string>Nombre de la base de datos:</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEditDatabaseNameDestino"/>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButtonConnectDBD">
-         <property name="text">
-          <string>Conectar a la base de datos destino</string>
-         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPushButton" name="pushButtonConnectDBD_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">	color: white;
+	background-color: #3F51B5;</string>
+            </property>
+            <property name="text">
+             <string>Limpiar Campos</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Minimum</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButtonConnectDBD_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">	color: white;
+	background-color: #3F51B5;</string>
+            </property>
+            <property name="text">
+             <string>Continuar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
        </item>
       </layout>
