@@ -15,7 +15,7 @@ void ReplicarWindow::setDbOrigen(QSqlDatabase* dbOrigen_p){
   dbOrigen = dbOrigen_p;
   QStringList tables = dbOrigen->tables();
   for(int i=0 ; i<tables.size(); i++){
-    if(i<tables.size()) ui.listWidgetDisponibles->addItem(tables.at(i));
+    if(i<tables.size()-2) ui.listWidgetDisponibles->addItem(tables.at(i));
   }
 }
 
@@ -27,30 +27,35 @@ void ReplicarWindow::setDbDestino(QSqlDatabase* dbDestino_p){
 
 // Slots
 void ReplicarWindow::addTable(){
+  bool pass = false;
   QListWidgetItem* item = ui.listWidgetDisponibles->currentItem();
-  QList<QListWidgetItem*> items = ui.listWidgetReplicar->findItems(item->text(), Qt::MatchContains);
-  if(items.size()==0){
-    ui.listWidgetReplicar->addItem(item->text());
-    ui.listWidgetReplicar->setCurrentRow(0);
-  }else{
+
+  for(size_t i=0; i<tables.size(); i++){
+    if(item->text() == tables.at(i)) pass =  true;
+  }
+
+  if(pass){
     QMessageBox Msgbox;
     Msgbox.setText("El elemento ya ha sido agregado");
     Msgbox.exec();
+  }else{
+    tables.push_back(item->text());
+    ui.listWidgetReplicar->addItem(item->text());
   }
+
+  ui.listWidgetReplicar->setCurrentRow(0);
   ui.listWidgetDisponibles->setCurrentRow(0);
 }
 
 void ReplicarWindow::removeTable(){
   QListWidgetItem* item = ui.listWidgetReplicar->currentItem();
-  QList<QListWidgetItem*> items ;
-  for(int i=0; i<ui.listWidgetReplicar->count(); i++){
-    items.push_back(ui.listWidgetReplicar->takeItem(i));
+  for(size_t i=0; i<tables.size(); i++){
+    if(item->text() == tables.at(i)) tables.erase(tables.begin()+i);
   }
+
   reset();
-  for(int i=0; i<items.size(); i++){
-    if(items.at(i)->text() != item->text()){
-      ui.listWidgetReplicar->addItem(items.at(i)->text());
-    }
+  for(size_t i=0; i<tables.size(); i++){
+    ui.listWidgetReplicar->addItem(tables.at(i));
   }
 }
 
@@ -60,5 +65,23 @@ void ReplicarWindow::reset(){
 
 // Acá se generan los cambios
 void ReplicarWindow::replicate(){
+  QSqlQuery query(*dbOrigen);
+  QSqlRecord rec;
+  for(size_t i=0; i<tables.size(); i++){
+    query.prepare("SELECT * FROM "+tables.at(i));
+
+      if( !query.exec() ) qDebug() << "Hubo un error";
+      else{
+        rec = query.record();
+        while( query.next() )
+        {
+
+          for( int c=0; c<rec.count(); c++ ) {
+            query.value(c);
+          }
+        }
+      }
+
+  }
 
 }

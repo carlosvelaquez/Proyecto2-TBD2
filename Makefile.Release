@@ -246,6 +246,10 @@ release/moc_MainWindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindo
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlQuery \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlquery.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlRecord \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlrecord.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString \
 		MainWindow.h \
 		release/moc_predefs.h \
@@ -385,6 +389,10 @@ release/moc_ReplicarWindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidge
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlQuery \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlquery.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlRecord \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlrecord.h \
 		ReplicarWindow.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
@@ -687,6 +695,8 @@ release/main.o: main.cpp C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication 
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlQuery \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlRecord \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o main.cpp
 
@@ -828,6 +838,10 @@ release/MainWindow.o: MainWindow.cpp MainWindow.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlQuery \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlquery.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlRecord \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlrecord.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\MainWindow.o MainWindow.cpp
 
@@ -964,7 +978,11 @@ release/ReplicarWindow.o: ReplicarWindow.cpp ReplicarWindow.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlQuery \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlquery.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlRecord \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlrecord.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\ReplicarWindow.o ReplicarWindow.cpp
 
 release/moc_MainWindow.o: release/moc_MainWindow.cpp 
