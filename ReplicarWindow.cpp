@@ -71,8 +71,6 @@ void ReplicarWindow::removeTable(){
     QListWidgetItem* item = ui.listWidgetReplicar->currentItem(); // Elemento seleccinado que se va a eliminar
     QSqlQuery query_origen(*dbOrigen);
 
-    reset();
-
     for(size_t i=0; i<tables.size(); i++){
 
       if(tables.at(i) == item->text()){
@@ -86,7 +84,7 @@ void ReplicarWindow::removeTable(){
     if(!query_origen.exec()) qDebug()<<"Hubo un error al eliminar la bitacora, ReplicarWindow.cpp";
     else qDebug() <<"Se elimino la bitacora exitosamente";
 
-
+    reset();
     for(size_t i=0; i<tables.size(); i++)
        ui.listWidgetReplicar->addItem(tables.at(i));
 
@@ -134,6 +132,9 @@ void ReplicarWindow::replicate(){
           qDebug()<<"Datos insertados exitosamente";
       }
       ui.listWidgetReplicar->clear();
+      QMessageBox Msgbox;
+      Msgbox.setText("La replicación se ha realizado exitosamente");
+      Msgbox.exec();
     }
 
   }
