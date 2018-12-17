@@ -50,6 +50,12 @@ void ReplicarWindow::addTable(){
     for(size_t i=0; i<tables.size(); i++)
        ui.listWidgetReplicar->addItem(tables.at(i));
 
+
+    ui.listWidgetDisponibles->clear();
+    QStringList tables = dbOrigen->tables();
+    for(int i=0 ; i<tables.size(); i++){
+      if(i<tables.size()-2) ui.listWidgetDisponibles->addItem(tables.at(i));
+    }
   }else{
     QMessageBox Msgbox;
     Msgbox.setText("No puede agregar la tabla de nuevo");
@@ -83,6 +89,13 @@ void ReplicarWindow::removeTable(){
 
     for(size_t i=0; i<tables.size(); i++)
        ui.listWidgetReplicar->addItem(tables.at(i));
+
+
+    ui.listWidgetDisponibles->clear();
+    QStringList tables = dbOrigen->tables();
+    for(int i=0 ; i<tables.size(); i++){
+      if(i<tables.size()-2) ui.listWidgetDisponibles->addItem(tables.at(i));
+    }
 }
 
 
@@ -92,5 +105,37 @@ void ReplicarWindow::reset(){
 
 /* ============== Acá se copian los datos ============== */
 void ReplicarWindow::replicate(){
+
+  QSqlQuery queryOrigen(*dbOrigen);
+  QSqlQuery queryDestino(*dbDestino);
+
+
+  //Se toman todos los datos de las tablas que se quieren replicar
+  for(size_t i=0; i<tables.size(); i++){
+    queryOrigen.prepare("SELECT * FROM "+tables.at(i));
+
+    if( !queryOrigen.exec() )  qDebug()<< "Hubo un error al seleccionar los datos, ReplicarWindow";
+    else{
+
+      qDebug()<<"Datos seleccinados exitosamente";
+      QSqlRecord rec = queryOrigen.record();
+      QString values;
+      while(queryOrigen.next()){
+
+        values = "";
+        for(int i=0; i<rec.count(); i++){ //Obtiene el data de cada tupla
+          if(i==rec.count()-1) values+= "'"+queryOrigen.value(i).toString()+"'";
+          else values+= "'"+queryOrigen.value(i).toString()+"', ";
+        }
+        qDebug()<<values;
+        queryDestino.prepare("INSERT INTO "+tables.at(i)+" VALUES ( "+values+" )");
+        if( !queryDestino.exec() ) qDebug()<< "Hubo un error al insertar los datos, ReplicarWindow";
+        else
+          qDebug()<<"Datos insertados exitosamente";
+      }
+      ui.listWidgetReplicar->clear();
+    }
+
+  }
 
 }
