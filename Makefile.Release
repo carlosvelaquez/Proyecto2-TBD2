@@ -216,48 +216,20 @@ release/moc_MainWindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindo
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
 		ui_MainWindow.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFrame \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlDatabase \
 		C:/Qt/5.11.2/mingw53_32/include/QtSql/qsqldatabase.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlglobal.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
 		ReplicarWindow.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		ui_ReplicarWindow.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidget \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidgetItem \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistview.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qitemselectionmodel.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
@@ -270,8 +242,6 @@ release/moc_MainWindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindo
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidgetItem \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/QList \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
@@ -284,7 +254,7 @@ release/moc_MainWindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindo
 		MainWindow.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/Proyecto N2 TDB II/Proyecto2-TBD2/release/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/Proyecto N2 TDB II/Proyecto2-TBD2" -I"C:/Users/carlo/Desktop/Proyecto N2 TDB II/Proyecto2-TBD2" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtSql -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward MainWindow.h -o release\moc_MainWindow.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/TBDII/Proyecto2/release/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/TBDII/Proyecto2 -IC:/Users/imado/Documents/Unitec/TBDII/Proyecto2 -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtSql -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward MainWindow.h -o release\moc_MainWindow.cpp
 
 release/moc_ReplicarWindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qwidget.h \
@@ -390,28 +360,16 @@ release/moc_ReplicarWindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidge
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
 		ui_ReplicarWindow.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFrame \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidget \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlDatabase \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/qsqldatabase.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlglobal.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidgetItem \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistview.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qitemselectionmodel.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
@@ -426,16 +384,6 @@ release/moc_ReplicarWindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidge
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlDatabase \
-		C:/Qt/5.11.2/mingw53_32/include/QtSql/qsqldatabase.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlglobal.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidgetItem \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/QList \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
@@ -448,7 +396,7 @@ release/moc_ReplicarWindow.cpp: C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidge
 		ReplicarWindow.h \
 		release/moc_predefs.h \
 		C:/Qt/5.11.2/mingw53_32/bin/moc.exe
-	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include "C:/Users/carlo/Desktop/Proyecto N2 TDB II/Proyecto2-TBD2/release/moc_predefs.h" -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -I"C:/Users/carlo/Desktop/Proyecto N2 TDB II/Proyecto2-TBD2" -I"C:/Users/carlo/Desktop/Proyecto N2 TDB II/Proyecto2-TBD2" -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtSql -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward ReplicarWindow.h -o release\moc_ReplicarWindow.cpp
+	C:\Qt\5.11.2\mingw53_32\bin\moc.exe $(DEFINES) --include C:/Users/imado/Documents/Unitec/TBDII/Proyecto2/release/moc_predefs.h -IC:/Qt/5.11.2/mingw53_32/mkspecs/win32-g++ -IC:/Users/imado/Documents/Unitec/TBDII/Proyecto2 -IC:/Users/imado/Documents/Unitec/TBDII/Proyecto2 -IC:/Qt/5.11.2/mingw53_32/include -IC:/Qt/5.11.2/mingw53_32/include/QtWidgets -IC:/Qt/5.11.2/mingw53_32/include/QtGui -IC:/Qt/5.11.2/mingw53_32/include/QtANGLE -IC:/Qt/5.11.2/mingw53_32/include/QtSql -IC:/Qt/5.11.2/mingw53_32/include/QtCore -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include -IC:/Qt/Tools/mingw530_32/lib/gcc/i686-w64-mingw32/5.3.0/include-fixed -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++ -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/i686-w64-mingw32 -IC:/Qt/Tools/mingw530_32/i686-w64-mingw32/include/c++/backward ReplicarWindow.h -o release\moc_ReplicarWindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -738,34 +686,11 @@ release/main.o: main.cpp C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication 
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindow \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmainwindow.h \
 		ui_MainWindow.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFrame \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		ReplicarWindow.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		ui_ReplicarWindow.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidget \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidgetItem \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/QList \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
@@ -883,48 +808,20 @@ release/MainWindow.o: MainWindow.cpp MainWindow.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
 		ui_MainWindow.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFrame \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlDatabase \
 		C:/Qt/5.11.2/mingw53_32/include/QtSql/qsqldatabase.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlglobal.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
 		ReplicarWindow.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		ui_ReplicarWindow.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidget \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidgetItem \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistview.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qitemselectionmodel.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
@@ -937,8 +834,6 @@ release/MainWindow.o: MainWindow.cpp MainWindow.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidgetItem \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/QList \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
@@ -1055,28 +950,16 @@ release/ReplicarWindow.o: ReplicarWindow.cpp ReplicarWindow.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
 		ui_ReplicarWindow.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFrame \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidget \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlDatabase \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/qsqldatabase.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlglobal.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidgetItem \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistview.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/qitemselectionmodel.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
@@ -1091,16 +974,6 @@ release/ReplicarWindow.o: ReplicarWindow.cpp ReplicarWindow.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		C:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlDatabase \
-		C:/Qt/5.11.2/mingw53_32/include/QtSql/qsqldatabase.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlglobal.h \
-		C:/Qt/5.11.2/mingw53_32/include/QtCore/QStringList \
-		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QListWidgetItem \
 		C:/Qt/5.11.2/mingw53_32/include/QtGui/QList \
 		C:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
 		C:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
