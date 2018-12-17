@@ -15,7 +15,11 @@ void ReplicarWindow::setDbOrigen(QSqlDatabase* dbOrigen_p){
   dbOrigen = dbOrigen_p;
   QStringList tables = dbOrigen->tables();
   for(int i=0 ; i<tables.size(); i++){
-    if(i<tables.size()-2) ui.listWidgetDisponibles->addItem(tables.at(i));
+    if(i<tables.size()-2){
+      if(!tables.at(i).contains("bitacora",Qt::CaseInsensitive) ){
+        ui.listWidgetDisponibles->addItem(tables.at(i));
+      }
+    }
   }
 }
 
@@ -92,7 +96,11 @@ void ReplicarWindow::removeTable(){
     ui.listWidgetDisponibles->clear();
     QStringList tables = dbOrigen->tables();
     for(int i=0 ; i<tables.size(); i++){
-      if(i<tables.size()-2) ui.listWidgetDisponibles->addItem(tables.at(i));
+      if(i<tables.size()-2){
+        if(!tables.at(i).contains("bitacora",Qt::CaseInsensitive) ){
+          ui.listWidgetDisponibles->addItem(tables.at(i));
+        }
+      }
     }
 }
 
@@ -125,11 +133,8 @@ void ReplicarWindow::replicate(){
           if(i==rec.count()-1) values+= "'"+queryOrigen.value(i).toString()+"'";
           else values+= "'"+queryOrigen.value(i).toString()+"', ";
         }
-        qDebug()<<values;
         queryDestino.prepare("INSERT INTO "+tables.at(i)+" VALUES ( "+values+" )");
         if( !queryDestino.exec() ) qDebug()<< "Hubo un error al insertar los datos, ReplicarWindow";
-        else
-          qDebug()<<"Datos insertados exitosamente";
       }
       ui.listWidgetReplicar->clear();
       QMessageBox Msgbox;
