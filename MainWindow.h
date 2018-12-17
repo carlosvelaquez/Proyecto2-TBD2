@@ -20,11 +20,13 @@ private:
 private slots:
   void conectarBdOrigen();
   void conectarBdDestino();
+  void connectarAmbasdb();
+  void limpiarCampos();
 
 public:
   void clearWidgets();
   void fillWidgets();
-  
+
   explicit MainWindow(QWidget* parent = 0);
 };
 
