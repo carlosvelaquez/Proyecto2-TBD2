@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>414</width>
-    <height>377</height>
+    <width>420</width>
+    <height>486</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -270,7 +270,7 @@ border-radius: 5px;</string>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_4">
           <item>
-           <widget class="QPushButton" name="pushButtonConnectDBD_2">
+           <widget class="QPushButton" name="pushButtonClearFields">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
               <horstretch>0</horstretch>
@@ -303,7 +303,7 @@ border-radius: 5px;</string>
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButtonConnectDBD_3">
+           <widget class="QPushButton" name="pushButtonContinue">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
               <horstretch>0</horstretch>

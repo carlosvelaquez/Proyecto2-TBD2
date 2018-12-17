@@ -6,18 +6,20 @@ MainWindow::MainWindow(QWidget* parent) :
 
   connect(ui.pushButtonConnectDBO, SIGNAL(clicked()), this, SLOT(conectarBdOrigen()));
   connect(ui.pushButtonConnectDBD, SIGNAL(clicked()), this, SLOT(conectarBdDestino()));
+  connect(ui.pushButtonContinue, SIGNAL(clicked()), this, SLOT(connectarAmbasdb()));
+  connect(ui.pushButtonClearFields, SIGNAL(clicked()), this, SLOT(limpiarCampos()));
   fillWidgets();
 }
 
 void MainWindow::fillWidgets(){
   ui.lineEditUserName_Origen->insert("SA");
-  ui.lineEditDatabaseNameOrigen->insert("TEST");
+  ui.lineEditDatabaseNameOrigen->insert("NorthWind");
   ui.lineEditPortOrigen->insert("1433");
   ui.lineEditInstanceNameOrigen->insert("");
   ui.lineEditPasswordOrigen->insert("Papitopiernaslargas69");
 
   ui.lineEditUserName_Destino->insert("admin");
-  ui.lineEditDatabaseNameDestino->insert("TEST");
+  ui.lineEditDatabaseNameDestino->insert("Northwind");
   ui.lineEditPortDestino->insert("");
   ui.lineEditInstanceNameDestino->insert("");
   ui.lineEditPasswordDestino->insert("papitopiernaslargas69");
@@ -56,20 +58,12 @@ void MainWindow::conectarBdOrigen(){
 
   if (dbOrigen.open()) {
     QMessageBox Msgbox;
-    Msgbox.setText("Se ha conectado exitosamente");
+    Msgbox.setText("Conexión establecida");
     Msgbox.exec();
   }else{
     QMessageBox Msgbox;
-    Msgbox.setText("Error al conectar, verifique las credenciales");
+    Msgbox.setText("Conexión no establecida, verifique las credenciales");
     Msgbox.exec();
-  }
-
-
-  if(dbOrigen.isOpen() && dbDestino.isOpen()){
-    ReplicarWindow* rw = new ReplicarWindow();
-    rw->setDbOrigen(&dbOrigen);
-    rw->setDbDestino(&dbDestino);
-    rw->show();
   }
 
 }
@@ -91,18 +85,29 @@ void MainWindow::conectarBdDestino(){
 
   if (dbDestino.open()) {
     QMessageBox Msgbox;
-    Msgbox.setText("Se ha conectado exitosamente");
+    Msgbox.setText("Conexión establecida");
     Msgbox.exec();
   }else{
     QMessageBox Msgbox;
-    Msgbox.setText("Error al conectar, verifique las credenciales");
+    Msgbox.setText("Conexión no establecida, verifique las credenciales");
     Msgbox.exec();
   }
 
-  if(dbOrigen.isOpen() && dbDestino.isOpen()){
+}
+
+void MainWindow::connectarAmbasdb(){
+  if(dbOrigen.open() && dbDestino.open()){
     ReplicarWindow* rw = new ReplicarWindow();
     rw->setDbOrigen(&dbOrigen);
     rw->setDbDestino(&dbDestino);
     rw->show();
+  }else{
+    QMessageBox Msgbox;
+    Msgbox.setText("Error, pruebe de nuevo las conexiones");
+    Msgbox.exec();
   }
+}
+
+void MainWindow::limpiarCampos(){
+  clearWidgets();
 }

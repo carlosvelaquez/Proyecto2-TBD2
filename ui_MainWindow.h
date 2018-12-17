@@ -66,16 +66,16 @@ public:
     QHBoxLayout *horizontalLayout_3;
     QFrame *frame_5;
     QHBoxLayout *horizontalLayout_4;
-    QPushButton *pushButtonConnectDBD_2;
+    QPushButton *pushButtonClearFields;
     QSpacerItem *horizontalSpacer;
-    QPushButton *pushButtonConnectDBD_3;
+    QPushButton *pushButtonContinue;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(414, 377);
+        MainWindow->resize(420, 486);
         MainWindow->setStyleSheet(QStringLiteral("background-color:#3F51B5;"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
@@ -278,30 +278,30 @@ public:
         frame_5->setFrameShadow(QFrame::Raised);
         horizontalLayout_4 = new QHBoxLayout(frame_5);
         horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
-        pushButtonConnectDBD_2 = new QPushButton(frame_5);
-        pushButtonConnectDBD_2->setObjectName(QStringLiteral("pushButtonConnectDBD_2"));
+        pushButtonClearFields = new QPushButton(frame_5);
+        pushButtonClearFields->setObjectName(QStringLiteral("pushButtonClearFields"));
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(pushButtonConnectDBD_2->sizePolicy().hasHeightForWidth());
-        pushButtonConnectDBD_2->setSizePolicy(sizePolicy);
-        pushButtonConnectDBD_2->setStyleSheet(QLatin1String("	color: white;\n"
+        sizePolicy.setHeightForWidth(pushButtonClearFields->sizePolicy().hasHeightForWidth());
+        pushButtonClearFields->setSizePolicy(sizePolicy);
+        pushButtonClearFields->setStyleSheet(QLatin1String("	color: white;\n"
 "	background-color: #3F51B5;"));
 
-        horizontalLayout_4->addWidget(pushButtonConnectDBD_2);
+        horizontalLayout_4->addWidget(pushButtonClearFields);
 
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Minimum, QSizePolicy::Minimum);
 
         horizontalLayout_4->addItem(horizontalSpacer);
 
-        pushButtonConnectDBD_3 = new QPushButton(frame_5);
-        pushButtonConnectDBD_3->setObjectName(QStringLiteral("pushButtonConnectDBD_3"));
-        sizePolicy.setHeightForWidth(pushButtonConnectDBD_3->sizePolicy().hasHeightForWidth());
-        pushButtonConnectDBD_3->setSizePolicy(sizePolicy);
-        pushButtonConnectDBD_3->setStyleSheet(QLatin1String("	color: white;\n"
+        pushButtonContinue = new QPushButton(frame_5);
+        pushButtonContinue->setObjectName(QStringLiteral("pushButtonContinue"));
+        sizePolicy.setHeightForWidth(pushButtonContinue->sizePolicy().hasHeightForWidth());
+        pushButtonContinue->setSizePolicy(sizePolicy);
+        pushButtonContinue->setStyleSheet(QLatin1String("	color: white;\n"
 "	background-color: #3F51B5;"));
 
-        horizontalLayout_4->addWidget(pushButtonConnectDBD_3);
+        horizontalLayout_4->addWidget(pushButtonContinue);
 
 
         horizontalLayout_3->addWidget(frame_5);
@@ -337,8 +337,8 @@ public:
         label_3->setText(QApplication::translate("MainWindow", "Nombre de instancia:", nullptr));
         label_4->setText(QApplication::translate("MainWindow", "Nombre de la base de datos:", nullptr));
         pushButtonConnectDBO->setText(QApplication::translate("MainWindow", "Probar Conexi\303\263n", nullptr));
-        pushButtonConnectDBD_2->setText(QApplication::translate("MainWindow", "Limpiar Campos", nullptr));
-        pushButtonConnectDBD_3->setText(QApplication::translate("MainWindow", "Continuar", nullptr));
+        pushButtonClearFields->setText(QApplication::translate("MainWindow", "Limpiar Campos", nullptr));
+        pushButtonContinue->setText(QApplication::translate("MainWindow", "Continuar", nullptr));
     } // retranslateUi
 
 };
